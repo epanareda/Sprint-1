@@ -1,0 +1,119 @@
+body{
+    max-width: 75rem; /*  1200px / 16px = 75  */
+    margin: 2rem auto;
+}
+
+div {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.color-black {
+    background-color: black;
+}
+
+
+/*  FIRST CONTAINER  */
+
+.dark-grey {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+}
+
+.dark-red {
+    background-color: darkred;
+    flex-basis: 15%;
+}
+
+.bigger {
+    flex-basis: 60%;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.dark-yellow {
+    background-color: rgb(236, 236, 0);
+}
+
+
+/*  SECOND CONTAINER  */
+
+#second-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.grey {
+    background-color: grey;
+    flex-basis: 60%;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.no-style {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+}
+
+.blue {
+    background-color: blue;
+    flex: 50%;
+}
+
+.sky-blue {
+    background-color: skyblue;
+    flex-basis: 100%;
+}
+
+.red {
+    background-color: red;
+    flex-basis: 30%;
+
+}
+
+.yellow {
+    background-color: rgb(240, 240, 52);
+}
+
+
+/*  THIRD CONTAINER  */
+
+.ocre {
+    background-color: darkgoldenrod;
+}
+
+
+/* TABLET DEVICE */
+
+@media only screen and (max-width: 75rem) {
+    #second-container {
+      background-color: yellow;
+      flex-direction: column;
+    }
+}
+
+
+/* PHONE DEVICE */
+
+@media only screen and (max-width: 37.5rem) { /* 600 / 16 = 37.5 */
+    #first-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dark-grey {
+      flex-direction: column;
+    }
+
+    .no-style {
+        flex-direction: column;
+    }
+
+
+}
